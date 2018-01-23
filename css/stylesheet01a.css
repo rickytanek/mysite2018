@@ -1,0 +1,45 @@
+.container {
+    width: 80%;  /* width is 80% of screen */
+    margin: 150px auto;
+
+}
+
+.div1 {
+    float: left; 
+    width: 98%; /* width is 98% of container */
+    height: 100px;
+    outline: 1px solid red;
+}
+
+.div2 {
+    float: left; 
+    width: 49%; /* width is 50% of container */
+    height: 300px;
+    outline: 1px solid olive;
+   /* margin-top: 10px;
+    margin-right: 10px; */
+}
+
+.div3 {
+    float: left; 
+    width: 49%; /* width is 50% of container */
+    height: 150px;
+    outline: 1px solid fuchsia;
+  /*  margin-top: 10px; */
+   
+}
+
+.div4 {
+    float: left; 
+    width: 49%; /* width is 50% of container */
+    height: 150px;
+    outline: 1px solid maroon;
+}
+
+.div5 {
+    float: left; 
+    width: 98%; /* width is 98% of container */
+    height: 100px;
+    outline: 1px solid blue;
+   /*  margin-top: 10px; */
+}

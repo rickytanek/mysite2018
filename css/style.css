@@ -1,0 +1,30 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    background-color: blue;
+}
+
+strong {
+    text-shadow: 5px 5px 5px yellow;
+}
+
+span {
+    font-style: italic;
+    font-weight: bold;
+    color: blue;
+}
+
+.writer {
+    font-size: 7;
+    font-style: italic;
+    color: red;
+    background-color: white;
+}
+
+.content{
+    font-size: 11;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: blueviolet;
+}

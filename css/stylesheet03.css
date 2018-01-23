@@ -1,0 +1,76 @@
+.header {
+    text-align: center;
+    background-color: lightcyan;
+    width: 98%; /* header is 98% of screen */
+}
+
+.nav {
+    width: 98%;
+    background-color: #f3f3f3;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 10px;
+  /*  position: absolute; */
+    text-align: center;
+}
+ 
+.nav ul {    /* style the section of items within nav */
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+/*
+.nav ul li a {  /* handle behaviour of nav bar items
+    float: left;
+    margin-right:100px;
+    display: block;
+    line-height: 30px;
+}
+*/
+
+.nav ul li {  /* handle behaviour of nav bar items  */
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+} 
+
+.leftsection {
+    float: left;
+    width: 70%;
+    background-color: grey;
+    text-align: center;
+}
+
+.rightsection {
+    float: right;
+    width: 30%;
+    background-color: yellow;
+}
+
+.footer {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.article {  /* define the behaviour of the 2 items in left article */
+    background-color: lightgoldenrodyellow;
+    width: 90%; /* set width to 90% of the div article */
+    border-radius: 5px;
+    margin: 10px 10px 10px 10px;
+}
+
+.sidemenu {
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    width: 80%;
+    margin-left: 10%;
+}
