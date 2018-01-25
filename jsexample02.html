@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script lang="javascript" type="text/javascript">
+            
+            /* Global and local variables */
+            var data = "global";
+
+            function getData() {
+                var data = "local";
+                alert("local data : " + data);
+            } 
+
+            function getData1() {
+                var data = "local1";
+                alert("Global data : " + this.data); // access to global data
+            } 
+
+            // Comparators
+            var a = true;
+            var b = true;
+            var result1 = (a && b);  // && is AND
+            var result2 = (a || b);  // || is OR
+            var result3 = !(a && b); // ! is NOT
+            var result4 = !(a || b);
+
+            document.writeln(result1);
+            document.writeln(result2);
+            document.writeln(result3);
+            document.writeln(result4);
+            
+            // If then else conditions
+            var num1 = 8;
+            var num2 = 16;
+
+            if (num1 == num2)   // Equal comparison
+            {
+                document.writeln("Equal<br>");
+            } 
+            else 
+            {
+                if (num1 < num2) 
+                {
+                    document.writeln("Num 1 is less than Num 2<br>");
+                }
+                else 
+                {
+                    if (num1 > num2) 
+                    {
+                        document.writeln("Num 1 is greater than Num 2<br>");
+                    }
+                    else
+                    {
+                        document.writeln("Error");
+                    }
+                }
+            }
+
+            // arrays
+            var names = ['Aa','Bb','Cc','Dd','Ee','Ff'];
+            var numbers = [1,2,3,4,5,6];
+            var names2 = [];      // empty arrays
+            var numbers2 = [];
+            
+            // For loop
+            for (var i = 0; i < names.length; i++) 
+            {
+                document.writeln(names[i] + "<br>");
+            }
+
+            for (var i = 0; i < numbers.length; i++) 
+            {
+                document.writeln(numbers[i] + "<br>");
+            }
+
+            // While loop
+            var x = 0;
+            while (x < names.length) 
+            {
+                document.writeln(names[x] + "<br>");
+                x++;
+            }
+            
+            var y = 0;
+            while (y < numbers.length) 
+            {
+                document.writeln(numbers[y] + "<br>");
+                y++;
+            }
+
+            // For loop using PUSH to copy items from Names into Name2
+            for (var i = 0; i < names.length; i++) 
+            {
+                names2.push(names[i]);
+                document.write(names2[i] + "<br>");
+            }
+
+            // For loop using PUSH to copy items from Numbers into Numbers2
+            for (var i = 0; i < numbers.length; i++) 
+            {
+                numbers2.push(numbers[i]);
+                document.write(numbers2[i] + "<br>");
+            }
+
+            // switch case statement
+            var marks = 65;
+            var grade = "";
+
+            if (marks < 50)
+            {
+                grade = "F";
+            }
+            else
+            {
+                if ((marks >= 50) && (marks < 60))
+                {
+                    grade = "D";
+                }
+                else
+                {
+                    if ((marks >= 60) && (marks < 70))
+                    {
+                        grade = "C";
+                    }
+                    else
+                    {
+                        grade = "B";
+                    }
+                }
+            }
+            document.write(grade + "<br>");
+            
+            switch(grade)
+            {
+                case "A":
+                    document.write("A - Excellent<br>");
+                    break;
+                case "B":
+                    document.write("B - Moderate<br>");
+                    getData();
+                    break;
+                case "C":
+                    document.write("C - Average<br>");
+                    getData1();
+                    break;
+                case "D":
+                    document.write("D - Poor<br>");
+                    break;
+                default: 
+                    document.write("Failed the module<br>");
+                    break;
+            }
+            
+            
+        </script>
+
+        <input type="button" value="Show value" onclick="getData()">
+
+    </body>
+</html>

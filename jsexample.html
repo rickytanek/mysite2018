@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>     
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+            // Javascript code here
+
+            // variables declaration 
+            var firstname = "frank";
+            var lastname = "tay";
+            var fullname = "";
+            var a = 10;
+            var b = 20;
+            var result = 0;
+
+            // function modules
+            function sumTwoValue() {
+                result = a + b;
+                alert("Result of a + b : " + result);     // alert is a pop-up box
+            }
+
+            function concatName() {
+                fullname = firstname + " " + lastname;
+                alert("Full name : " + fullname);     // alert is a pop-up box
+
+            }
+
+            function computeSum() {
+                var first = document.getElementById("FirstNumber").value; //Get the value from ID as a string in HTML and assign to variable
+                var second = document.getElementById("SecondNumber").value;
+                var f = parseInt(first);   // convert from string to integrer
+                var s = parseInt(second);
+                //var rslt = sumValues(f,s);
+                //alert(rslt);
+                alert(sumValues(f,s));
+            }
+
+            function sumValues(a,b) {
+                var resultSum = a + b;
+                // alert(resultSum);   
+                return resultSum; 
+            }
+
+            //result = a + b;
+            // fullname = firstname + " " + lastname;
+
+//            console.log("Name:" + name);
+  //          console.log(result);
+    //        console.log(fullname);
+      //      alert("Result: " + result + "\r\n" + "fullname: " + fullname);     // alert is a pop-up box
+        
+        </script>
+
+        <!-- Below is asking for 2 input, then use a function to get the value keyed into the input box -->
+        Enter First Number :
+        <input type="number" id="FirstNumber">
+        <br><br>
+        Enter Second Number :
+        <input type="number" id="SecondNumber">
+        <br><br>
+        <input type="button" onclick="computeSum()" value="Sum Input Values">
+        <br><br>
+        
+        <!-- Function call assign to button -->
+        <input type="button" onclick="sumTwoValue()" value="Sum Two Values">
+        <br><br>
+        <input type="button" onclick="concatName()" value="Show Full Name ">
+        
+        
+    </body>
+</html>

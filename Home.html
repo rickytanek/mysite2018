@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <!-- Include the below 3 links so that CDN copy will be used instead of downloading -->
+        <!-- Latest compiled and minified CSS for version 3.3.7. For 4.0 go to bootstrap site-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!-- Font Awesome.io Javascript -->
+        <script src="https://use.fontawesome.com/201f99b414.js"></script>
+
+        <!-- Below meta are the basic to be included for any website and keywords is necessary for SEO -->
+        <meta name="description" content="Bootstrap Test Page">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="Ricky Tan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Viewport is the visiable area of users webpage. Needed for auto-scaling on different devices -->
+
+        <script>
+                $(document).ready(function(){
+                    $('[data-toggle="tooltip1"]').tooltip(); 
+                });
+        </script>
+    
+                
+        <title>My First Bootstrap Page</title>
+    </head>
+    <body> 
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <h1>My First Bootstrap Page</h1>
+                <p>This is some text.</p> 
+            </div>
+        </div> 
+
+        <!-- Navigation bar menu -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">ABC Networks</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li> <!-- active means it is selected -->
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div id="navbar" class="navbar-collapse collapse"> <!-- search visible in full screen, disappear in small screen -->
+                    <form class="navbar-form navbar-right">        <!-- right align the search form -->
+                        <div class="form-group">                   <!-- good practise to use form group if have input -->
+                            <input type="text" placeholder="Search" class="form-control">
+                        </div>
+                            <button type="submit" class="btn btn-default">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Content Area -->
+        <div class="container-fluid">
+            <div class="row">       <!-- 1st row has 2 columns -->
+                <div class="col-xs-12 col-sm-6"> <!-- 1 column for tablet, 2 column for phone -->
+                    <!-- Inline styling to add padding, left align and take up 80% of column. Style only applies here -->
+                    <div style="padding:10px 10px 10px 10px; float: left; width: 80%">
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>                                      
+                                <input type="password" class="form-control" id="pwd">
+                            </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                   
+                </div>
+                <div class="col-xs-12 col-sm-6 text-center">
+                    <h1>
+                        All about Myself
+                    </h1>
+                    <hr>  <!-- add 1 line across -->
+                    <p>
+                        NUS-ISS has all the fundamentals to lead this movement where we create an eco-system to help 
+                        build the tech caliber of Tech Startups. We are poised to amalgamate the disciplines using a 
+                        'whole-stack' approach to co-create the next engine of growth in Singapore with technologists 
+                        for technologists.
+
+                        StackUp is a new curriculum conceived to transform individuals into aspiring technologists. 
+                        It will equip students with the foundational skills required - from attitude and aptitude to 
+                        technical competencies - to drive the development of market-relevant tech products from idea 
+                        through to implementation.      
+                        Designed to help new startups and SMEs that rely on open stack technologies, this programme 
+                        offers the chance to participate in class, immerse in apprenticeships and apply newly-acquired 
+                        principles and concepts to real-life projects.
+                    </p>
+                </div>
+            </div>
+            <div class="row">       <!-- 2nd row has only 1 column to show video -->
+                <div class="col-xs-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="border: 1px solid rgb(158, 14, 14);">
+        <!-- This section is 1 row with 3 columns -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <h2>Left Section</h2>
+                    <p>
+                        We develop stellar tech interns, tech recruits and tech talents to 
+                        become technologists at startups to advance the digital fabric of a smart world.
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-default" role="button">View Details &raquo;</a>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h2>Centre Section</h2>
+                    <p>
+                        Anticipate the future, seize the opportunities. It is our future and within our 
+                        direct control to define our lives digitally 
+                    </p>
+                    <p>
+                            <a href="#" class="btn btn-primary" role="button">View Details &raquo;</a>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h2>Right Section</h2>
+                    <p>
+                        Designed to help new startups and SMEs that rely on open stack technologies, 
+                        this programme offers the chance to participate in class, immerse in apprenticeships 
+                    </p>
+                    <p>
+                            <a href="#" class="btn btn-danger" role="button">View Details &raquo;</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">  <!-- Creating a panel table on left size -->
+            <div class="col-xs-12 col-md-4 panel panel-default">
+                <h3 class="text-center">Operating Hours</h3>
+                <table class="table table-striped">  <!-- using the class "table" it puts in the default bootstrap style -->
+                    <thead>  <!-- Header of panel -->
+                        <tr>
+                            <th>Day</th>
+                            <th>Hour</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday to Thursday</td>
+                            <td>0900 to 1800 hrs</td>
+                        </tr>
+                        <tr>
+                            <td>Friday and Saturday</td>
+                            <td>0900 to 1300 hrs</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-xs-12 col-md-4">  <!-- Center embed a google map -->
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe src="https://goo.gl/KUBB7L" class="responsive-embed"></iframe>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">  <!-- Right using list group -->
+                <h3>Check Me Out</h3>
+                <br>
+                <div class="list-group">  <!-- Use the icons from Fontawesome.io -->
+                    <a href="#" class="list-group-item"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>    ricky@abc.com</a>
+                    <a href="#" class="list-group-item"><i class="fa fa-phone fa-2x" aria-hidden="true"></i>    +65 123 4567</a>
+                    <a href="#" class="list-group-item"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i>    t.me/ricky</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <ul class="list-inline">
+                    <li><a href="https://www.facebook.com" data-toggle="tooltip" title="Hooray Facebook"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.twitter.com" data-toggle="tooltip" title="Hooray Twitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.snapchat.com"><i class="fa fa-snapchat-square fa-3x" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    <hr>
+    <footer class="footer text-center">
+        Copyright &copy; 2018 ABC Networks Pte Ltd 
+    </footer>
+</html>
