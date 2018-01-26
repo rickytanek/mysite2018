@@ -1,0 +1,173 @@
+body   /* background of whole page */
+{
+    background: rgb(106, 110, 117);
+}
+
+.background  /* background of calculator */
+{
+    width: 300px;
+    height: 400px;
+    background: rgb(40, 134, 174);
+    margin: 50px auto;  /* auto helps to center the calculator in page */
+}
+
+button
+{
+    border: 0;
+    color: white; /* default button white color. Later than change */
+}
+
+#result  /* area to display the result */
+{
+    display: block; /* display at specific location */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 250px;
+    height: 40px;
+    margin: 10px auto; /* top 10px margin, the rest auto align */
+    background: #445e5e;
+    text-align: right;
+    color: white;
+    border: 0;
+    font-size: 20px;
+    letter-spacing: 4px;  /* gap between each number */
+    padding-top: 15px;    /* numbers move lower inside the box */
+    overflow: hidden;     /* numbers don't flow outside of box */
+    position: relative;   /* auto adjust to screen size */
+    border-radius: 10px;  /* rounded border */
+    top: 5px;             /* content from top of container */
+}
+
+#result:hover
+{
+    cursor: text;   /* so allows change of text when move over */
+}
+
+#first-row
+{
+    margin-bottom: 20px;  /* gap between this row and next row */
+    position: relative;
+    top: 10px;
+    /* background: purple; */
+}
+
+.rows
+{
+    width: 300px;
+    margin-top: 10px;
+    /* background: purple; */
+}
+
+#delete       /* delete button */
+{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 20px;   /* 20 px from left */
+}
+
+.btn-style /* style each button */
+{
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    border-radius: 5px;   
+}
+
+.first-child  /* for all the first left button to align with DEL and 0 btn */
+{
+    margin-left: 20px;    
+}
+
+.num-bg   /* default number button background */
+{
+    background: black;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 5px solid #333333;
+}
+
+.num-bg:active    /* when numbers are clicked */
+{
+    background: black;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: inset 5px 5px 5px cyan; /* shadow inside button when pressed */ 
+}
+
+.opera-bg
+{
+    background: #333333;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 5px solid #333;
+}
+
+.opera-bg:active
+{
+    background: #333333;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 5px solid #333;
+    box-shadow: inset 5px 5px 5px cyan; /* shadow inside button when pressed */ 
+}
+
+
+.del-bg
+{
+    background: #333333;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 5px solid #333;
+}
+
+.del-bg:active
+{
+    background: #333333;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 5px solid #333;
+    box-shadow: inset 5px 5px 5px cyan; /* shadow inside button when pressed */ 
+}
+
+.eqn-bg
+{
+    background: #333333;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 5px solid #333;
+}
+
+.eqn-bg:active
+{
+    background: #333333;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 5px solid #333;
+    box-shadow: inset 5px 5px 5px cyan; /* shadow inside button when pressed */ 
+}
+
+.align    /* to align the + and = button to the right */
+{
+    margin-left: 6px !important;   /* priority to align */
+}
+
+.fall-back  /* align the centre % and . buttons */
+{
+    margin-left: 14px !important;
+}
